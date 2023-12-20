@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link href="ateliermusee.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didot&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didot&family=Montserrat+Subrayada&display=swap"
+        rel="stylesheet">
     <title>Atelier Musée</title>
 </head>
 
 <body>
     <header>
-        <div class="logo_and_name">
-            <img src="logo.png" class="header_eleements"/>
-            <h1 class="header_eleements">MUSEES</h1>
-        </div>
-        <div class="fav_and_search">
-            <p class="header_eleements">Mes favoris</p>
-            <input placeholder="Votre recherche" class="header_eleements"/>
-        </div>
+        <nav>
+            <div class="logo_and_name">
+                <img src="./ressources/logo.png" class="header_elements" />
+                <h1 class="header_elements nomsite">MUSEES</h1>
+            </div>
+            <div class="fav_and_search">
+                <img src="./ressources/star.png" class="star mobilestar">
+                <p class="header_elements favorite">Mes favoris</p>
+                <input placeholder="Votre recherche" class="header_elements" />
+            </div>
+        </nav>
     </header>
     <main>
         <section>
-            <h1>Mes favoris</h1>
+
+            <h1 class="titre">Mes favoris</h1>
+
             <article>
-                <div>
+                <header class="name_and_star">
                     <h2>Musée du Château des Rohan</h2>
-                    <img src="star.png" class="star"/>
-                </div>
-                <p>Le musée a été créé en 1858 pour abriter les vestiges archéologiques découverts dans les environs de Saverne. Des collections d'art et d'histoire ont été acquises par la suite. Entre 1952 et 1966 le musée a reçu plusieurs donations de tableaux du peintre Alfred Roll. En 1983, la journaliste Louise Weiss a légué ses collections au musée (peintures et dessins du XXe siècle, mobilier XIXe et XXe siècles, documents historiques, collections ethnographiques).</p>
+                    <img src="./ressources/star.png" class="star" />
+                </header>
 
-                <address><b>Adresse:</b><a target="pagemaps" href="pagemaps.html"> 3 place du château 67330,Bouxwiller </a></address>
-                <button><a href="https://www.saverne.fr/sport-culture/offre-culturelle/musee-de-saverne/">Visiter le site</a></button>
-            </article>   
-            <hr/>
+                <p>Le musée a été créé en 1858 pour abriter les vestiges archéologiques découverts dans les environs de
+                    Saverne. Des collections d'art et d'histoire ont été acquises par la suite. Entre 1952 et 1966 le
+                    musée a reçu plusieurs donations de tableaux du peintre Alfred Roll. En 1983, la journaliste Louise
+                    Weiss a légué ses collections au musée (peintures et dessins du XXe siècle, mobilier XIXe et XXe
+                    siècles, documents historiques, collections ethnographiques).</p>
 
-            <article>
-                <div>
-                    <h2>Musée Alsacien</h2>
-                    <img src="star.png" class="star"/>
-                </div>    
-                
-                <p>En 1902 est fondée la Société du musée alsacien (SARL) qui bénéficia de nombreux dons de particuliers et effectua des achats dans les villages, acquisitions malheureusement non documentées. Le musée ouvre en 1907 avec des reconstitutions d'intérieurs. Durant la Première Guerre mondiale, il est mis sous séquestre, puis repris par la Ville.</p>
+                <address><b>Adresse:</b><a target="maps" href="maps.html">3 place du château, 67330 BOUXWILLER</a></address>
 
-                <address><b>Adresse:</b><a target="pagemaps" href="pagemaps.html">1 place, Joseph Thierry Haguenau</a></address>
-                <button><a href="https://www.musees.strasbourg.eu/musee-alsacien">Visiter le site</a></button>
-
-
+                <button class="visit"><a href="https://www.saverne.fr/sport-culture/offre-culturelle/musee-de-saverne/"></a>Visiter le
+                    site</button>
 
             </article>
+            <hr />
 
-        
-                
-            
+            <article>
+                <header class="name_and_star">
+                    <h2>Musée Alsacien</h2>
+                    <img src="./ressources/star.png" class="star" />
+                </header>
+
+                    <p>En 1902 est fondée la Société du musée alsacien (SARL) qui bénéficia de nombreux dons de particuliers
+                    et effectua des achats dans les villages, acquisitions malheureusement non documentées. Le musée
+                    ouvre en 1907 avec des reconstitutions d'intérieurs. Durant la Première Guerre mondiale, il est mis
+                    sous séquestre, puis repris par la Ville.</p>
+
+                <address><b>Adresse:</b><a target="pagemaps" href="maps.html">1 place, Joseph Thierry Haguenau</a></address>
+
+                <button class="visit"><a href="https://www.musees.strasbourg.eu/musee-alsacien"></a>Visiter le site</button>
+            </article>
+
+
+
+
         </section>
     </main>
 </body>
+
 </html>
