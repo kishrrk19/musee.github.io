@@ -11,23 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Didot&family=Montserrat+Subrayada&display=swap"
         rel="stylesheet">
 </head>
+
 <!-- Navbar header-->
 <header>
-    <div class="logo_and_name">
-        <img src="logo.png" class="header_eleements">
-        <h1 class="header_eleements">MUSEES</h1>
-    </div>
-    <div class="fav_and_search">
-        <p class="header_eleements">Mes favoris</p>
-        <input placeholder="Votre recherche" class="header_eleements" />
-    </div>
+    <nav>
+        <div class="logo_and_name">
+            <img src="./ressources/logo.png" class="header_elements">
+            <h1 class="header_elements">MUSEES</h1>
+        </div>
+        <div class="fav_and_search">
+            <p class="header_elements favorite">Mes favoris</p>
+            <input placeholder="Votre recherche" class="header_elements" />
+        </div>
+    </nav>
 </header>
 
-<!--main-->
+<!--Main-->
 <main>
-    <!--themes - section - button : 
-    "Archéologie","Ethnologie", "Histoire", "Sciences de la nature"
--->
+    <!--Museum themes - section - button -->
     <section>
         <button>Archéologie</button>
         <button>Ethnologie</button>
@@ -35,35 +36,36 @@
         <button>Sciences de la nature</button>
     </section>
 
-
-    <!--Museum info histoire section -->
+    <!--Museum information section -->
     <section>
-        <!-- "musée du Pays de Hanau - histoire et vies d’un territoire" -->
-        <h1>Musée du Pays de Hanau - Histoire et vies d’un territoire</h1>
-        <!-- Museum adress address-->
+        <!-- Museum name -->
+        <header class="name_and_star">
+            <h2>Musée du Pays de Hanau - histoire et vies d’un territoire</h2>
+            <img src=".ressources/star.png" class="star"/>
+        </header>
+        <!-- Museum adress and phone -->
         <address>
             Adresse : <br />
             3 place du Château<br />
             67 330 Bouxwiller<br />
             <a href="tel:+388003839">03 88 00 38 39</a>
         </address>
-        <!-- Museum atout article -->
+        <!-- Museum atout -->
         <article>
             Histoire du pays de Hanau, bibliothèque de recherche (5.000 volumes), vie quotidienne au XIXe
             siècle dans le pays de Hanau, le Bastberg et ses recherches géologiques. Divers objets et meubles
             provenant de la famille de Marie Hart (Marie-Anne Hartmann), célèbre poétesse et romancière d'expression
             dialectale", "autnom":"Musée de Bouxwiller et du Pays d'Hanau.
         </article>
-        <!-- Museum history article -->
+        <!-- Museum history -->
         <article>
             Créé en 1934, le musée possède une salle en 1964, ainsi que 1.600 objets. En 1982, il compte sept salles
             et plus de 15.000 objets. Le musée, entièrement rénové, réouvre en juin 2013.
         </article>
     </section>
 
-    <!--visit us button-->
-    <button>Nous visiter</button>
+    <!--Visit us button-->
+    <button class="visit">Nous visiter</button>
 
 </main>
-
 </html>
