@@ -271,12 +271,11 @@ button{
     }
 }
 
-
-
-
-
-
-
-
+    /*Media query for limit screen 1200px*/
     
-
+    @media screen and (min-width:992px) {
+        main{
+        width:80% ;
+        margin: auto;
+    }
+}
