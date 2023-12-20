@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maps of museum</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar header-->
     <header>
       <nav>
         <div class="logo_and_name">
-          <img src="logo.png" class="header_elements" />
+          <img src="./ressources/logo.png" class="header_elements" />
           <h1 class="header_elements">MUSEES</h1>
         </div>
         <div class="fav_and_search">
@@ -21,13 +22,23 @@
     </header>
     <!-- main-->
     <main>
-      <h1>Musée du Pays de Hanau - histoire et vies d’un territoire</h1>
-      <address>
-        3 place du Château <br />
-        67330 Bouxwiller
-      </address>
-      <!-- Integration API -->
-      <img src="/ressources/maps-musee-hanau.JPG" />
+      <div class="container-maps">
+        <div class="item-maps-nom-musee">
+          <h1 class="maps-nom-musee">
+            Musée du Pays de Hanau - histoire et vies d’un territoire
+          </h1>
+        </div>
+        <div class="item-maps-adress-musee">
+          <address class="maps-adress-musee">
+            3 place du Château <br />
+            67330 Bouxwiller
+          </address>
+        </div>
+        <!-- Integration API -->
+        <div class="item-maps-img">
+          <img src="./ressources/maps-musee-hanau.JPG" class="maps-img" />
+        </div>
+      </div>
     </main>
   </body>
 </html>
