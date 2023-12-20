@@ -95,6 +95,44 @@ button{
     margin: 10px;
 }
 
+/*DETAILS PAGE*/
+
+/* DETAILS HTML */
+.museum_themes{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.button_theme{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: solid;
+    border-color: var(--secondaryColor);
+    background-color: white;
+    padding-block:0.4rem;
+    padding-inline: 0.5rem;
+}
+
+.museum_informations{
+    display: flex;
+    flex-wrap: wrap;
+}
+.museum_informations > article{
+    max-width: 75%;
+    margin-right: 3rem;
+}
+.museum_informations > div{
+    position: relative;
+    width: 15%;
+
+}
+.visit_detail{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 @media all and (max-width: 992px) {
 
     .fav_and_search{
@@ -139,5 +177,7 @@ button{
     }   
 
 }
+
+
     
 
