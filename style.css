@@ -4,6 +4,7 @@
     --blackColor: #000000;
 }
 
+/*CSS GLOBAL*/
 nav {
     background-color: var(--primaryColor);
     display: flex;
@@ -95,8 +96,6 @@ button{
     margin: 10px;
 }
 
-/*DETAILS PAGE*/
-
 /* DETAILS HTML */
 .museum_themes{
     margin-top: 1rem;
@@ -133,11 +132,16 @@ button{
     right: 0;
 }
 
+/*MEDIA QUERY GLOBAL*/
 @media all and (max-width: 992px) {
 
     .fav_and_search{
         display: flex;
         align-items: center;
+    }
+
+    ::placeholder {
+        font-size:x-small;
     }
 
     .mobilestar{
@@ -175,7 +179,6 @@ button{
     .nomsite{
     font-size: 20px;
     }   
-
 }
 
 
