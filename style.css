@@ -168,10 +168,6 @@ button{
     place-items: center;
 }
 
-.maps-nom-musee{
-    font-size: 1.5rem;
-}
-
 .maps-img{
     height: 25rem;
     width: 25rem;
@@ -253,10 +249,7 @@ button{
         display: grid;
         place-items: center;
     }
-    
-    .maps-nom-musee{
-        font-size: 1.5rem;
-    }
+
     
     .maps-img{
         height: 25rem;
