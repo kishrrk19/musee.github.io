@@ -122,15 +122,13 @@ button{
     margin-right: 3rem;
 }
 .museum_informations > div{
-    position: relative;
     width: 15%;
+    display: flex;
 
 }
 .visit_detail{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    align-self: flex-end;
+    min-width: 10rem;
 }
 
 /* page maps*/
@@ -219,6 +217,14 @@ button{
     .nomsite{
     font-size: 20px;
     }   
+
+    /* detail mobile*/
+    .museum_informations{
+        justify-content: center;
+    }
+    .museum_informations > div{
+        align-self: center;
+    }
 
 /* map mobile */
     .container-maps{
