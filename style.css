@@ -4,6 +4,7 @@
     --blackColor: #000000;
 }
 
+/*CSS GLOBAL*/
 nav {
     background-color: var(--primaryColor);
     display: flex;
@@ -95,8 +96,6 @@ button{
     margin: 10px;
 }
 
-/*DETAILS PAGE*/
-
 /* DETAILS HTML */
 .museum_themes{
     margin-top: 1rem;
@@ -171,11 +170,20 @@ button{
     width: 25rem;
 }
 
+/*MEDIA QUERY GLOBAL*/
 @media all and (max-width: 992px) {
 
+    main{
+        width: 80%;
+        margin: auto;
+    }
     .fav_and_search{
         display: flex;
         align-items: center;
+    }
+
+    ::placeholder {
+        font-size:x-small;
     }
 
     .mobilestar{
@@ -221,7 +229,7 @@ button{
     .museum_informations > div{
         align-self: center;
     }
-
+    
 /* map mobile */
     .container-maps{
         display:grid;
@@ -263,6 +271,11 @@ button{
     }
 }
 
-
+    /*Media query for limit screen 1200px*/
     
-
+    @media screen and (min-width:992px) {
+        main{
+        width:80% ;
+        margin: auto;
+    }
+}
