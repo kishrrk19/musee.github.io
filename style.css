@@ -73,6 +73,7 @@ h2{
 a{
     text-decoration: none;
     color: var(--blackColor);
+    font-style: normal;
 }
 
 .visit{
@@ -272,10 +273,17 @@ button{
 }
 
     /*Media query for limit screen 1200px*/
-    
     @media screen and (min-width:992px) {
         main{
         width:80% ;
         margin: auto;
     }
+
+        nav >div {
+           margin-right: 10%; 
+        }
+
+        .logo_and_name{
+            margin-left: 10%;
+        }
 }
