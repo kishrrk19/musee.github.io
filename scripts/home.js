@@ -1,6 +1,7 @@
 let globalThemesSet = new Set;
 let eachMuseumThemesTab = [];
 let museumList=  [];
+let star;
 
 async function fetchMuseumList () {
     const response = await fetch("https://data.culturecommunication.gouv.fr/api/explore/v2.1/catalog/datasets/musees-de-france-base-museofile/records?limit=30")
@@ -9,7 +10,7 @@ async function fetchMuseumList () {
     //appel des resultats de l'API
     const firstMuseumName = museumList[0].nomoff;
     console.log(firstMuseumName);
-
+  
 
     //tableau pour stocker les themes
     museumList.map((museum)=>{
@@ -30,7 +31,7 @@ async function fetchMuseumList () {
         `
         filter.innerHTML += filterMuseum;
     }      
-    
+
     //Boucle pour afficher les musees dans un article
     for(let  i = 0; i < museumList.length; i++){
         const museum = museumList[i];
@@ -43,7 +44,7 @@ async function fetchMuseumList () {
         `<article>
                 <header class="name_and_star">
                 <h2>${name}</h2>
-                    <img src="./ressources/star.png" class="star" style="opacity:0.33"/>
+                    <img src="./ressources/star.png" class="star" id="star" style="opacity:0.33"/>
                 </header>
                 <p>${history}</p>
                 <p><b>Lieu:</b>${city}</p>
@@ -51,7 +52,10 @@ async function fetchMuseumList () {
             </article>
             <hr/>`
             targetMuseum.innerHTML += infoMuseum; 
+            star = document.getElementById('star')
+            star.addEventListener('click', function () {star.style.opacity = "1";})   
     } 
+  
 }
    
 // fonction qui gère la liste déroulante
@@ -84,7 +88,7 @@ function handleSelectChange(event) {
         `<article>
                 <header class="name_and_star">
                 <h2>${name}</h2>
-                    <img src="./ressources/star.png" class="star"/>
+                    <img src="./ressources/star.png" class="star" id="star" style="opacity:0.33"/>
                 </header>
                 <p>${history}</p>
                 <p><b>Lieu:</b>${city}</p>
@@ -122,7 +126,7 @@ function handleSearchClick() {
         `<article>
                 <header class="name_and_star">
                 <h2>${name}</h2>
-                    <img src="./ressources/star.png" class="star" id="star"/>
+                    <img src="./ressources/star.png" class="star" id="star" style="opacity:0.33"/>
                 </header>
                 <p>${history}</p>
                 <p><b>Lieu:</b>${city}</p>
