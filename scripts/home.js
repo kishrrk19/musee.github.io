@@ -70,6 +70,7 @@ function handleSelectChange(event) {
     )
     
     targetMuseum.innerHTML = "";
+    
     //Boucle pour afficher les musées filtrés par thèmes 
     for(let  i = 0; i < filteredTab.length; i++){
         const museum = filteredTab[i];
