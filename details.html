@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Musée - Détails</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didot&family=Montserrat+Subrayada&display=swap"
         rel="stylesheet">
@@ -16,13 +16,16 @@
 <header>
     <nav>
         <div class="logo_and_name">
-            <img src="./ressources/logo.png" class="header_elements"/>
+            <img src="./ressources/logo.png" class="header_elements" alt="logo"/>
             <h1 class="header_elements nomsite"><a href="home.html">MUSEES</a></h1>
         </div>
         <div class="fav_and_search">
-            <img src="./ressources/star.png" class="star mobilestar">
+            <img src="./ressources/star.png" class="star mobilestar" alt="star"/>
             <p class="header_elements favorite"><a href="favoris.html">Mes favoris</a></p>
-            <input placeholder="Votre recherche" class="header_elements" />
+            <div class="search_div">
+                <input placeholder="Votre recherche" class="header_elements" id="search_input"/>
+                <button class="ok_button" onclick="handleSearchClick()">OK</button>
+            </div>
         </div>
     </nav>
 </header>
@@ -43,7 +46,7 @@
         <!-- Museum name -->
         <header class="name_and_star">
             <h2 id="targetName">Musée du Pays de Hanau - histoire et vies d’un territoire</h2>
-            <img src="ressources/star.png" class="star" />
+            <img src="ressources/star.png" class="star" alt="star"/>
         </header>
         <!-- Museum adress and phone -->
         <article>
