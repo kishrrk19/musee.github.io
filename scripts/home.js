@@ -3,7 +3,6 @@ let eachMuseumThemesTab = [];
 let museumList=  [];
 
 async function fetchMuseumList () {
-
     const response = await fetch("https://data.culturecommunication.gouv.fr/api/explore/v2.1/catalog/datasets/musees-de-france-base-museofile/records?limit=30")
     const json = await response.json();
     museumList = json.results
@@ -35,25 +34,24 @@ async function fetchMuseumList () {
     //Boucle pour afficher les musees dans un article
     for(let  i = 0; i < museumList.length; i++){
         const museum = museumList[i];
-
         const name= museum.nomoff;
         const history = museum.hist;
         const city = museum.ville_m;
         const visit = museum.url_m;
-
+   
         let infoMuseum = 
         `<article>
                 <header class="name_and_star">
                 <h2>${name}</h2>
-                    <img src="./ressources/star.png" class="star"/>
+                    <img src="./ressources/star.png" class="star" style="opacity:0.33"/>
                 </header>
                 <p>${history}</p>
                 <p><b>Lieu:</b>${city}</p>
                 <a href="http://${visit}"><button class="visit"> Nous Visiter</button></a> 
             </article>
             <hr/>`
-            targetMuseum.innerHTML += infoMuseum;
-    }   
+            targetMuseum.innerHTML += infoMuseum; 
+    } 
 }
    
 // fonction qui gère la liste déroulante
@@ -123,7 +121,7 @@ function handleSearchClick() {
         `<article>
                 <header class="name_and_star">
                 <h2>${name}</h2>
-                    <img src="./ressources/star.png" class="star"/>
+                    <img src="./ressources/star.png" class="star" id="star"/>
                 </header>
                 <p>${history}</p>
                 <p><b>Lieu:</b>${city}</p>
@@ -131,9 +129,9 @@ function handleSearchClick() {
             </article>
             <hr/>`
             targetMuseum.innerHTML += infoMuseum;
+
     } 
 }
-
 
 window.addEventListener("load", (event) => {
     fetchMuseumList();
