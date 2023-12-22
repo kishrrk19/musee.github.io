@@ -22,6 +22,42 @@ button.addEventListener("click", (event) => {
 const target = document.getElementById("target");
 
 
+
+function handleSearchClick() {
+    const search_input = document.getElementById('search_input');
+     console.log(search_input.value)
+     let filteredTab = []
+     museumList.map((museum)=>{
+         if (museum.nomoff.toLowerCase().includes(search_input.value.toLowerCase())) {
+             filteredTab.push(museum)
+         } 
+     })
+     console.log('filteredTab2:' , filteredTab)
+ 
+     targetMuseum.innerHTML = "";
+ 
+     for(let  i = 0; i < filteredTab.length; i++){
+         const museum = filteredTab[i];
+ 
+         const name= museum.nomoff;
+         const history = museum.hist;
+         const city = museum.ville_m;
+         const visit = museum.url_m;
+ 
+         let infoMuseum = 
+         `<article>
+                 <header class="name_and_star">
+                 <h2>${name}</h2>
+                     <img src="./ressources/star.png" class="star"/>
+                 </header>
+                 <p>${history}</p>
+                 <p><b>Lieu:</b>${city}</p>
+                 <a href="http://${visit}"><button class="visit"> Visiter le site</button></a> 
+             </article>
+             <hr/>`
+             targetMuseum.innerHTML += infoMuseum;
+     } 
+ }
 // Nom = targetName
 // Adresse = targetAddress
 // Tel = targetPhone

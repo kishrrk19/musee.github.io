@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,10 @@
             <div class="fav_and_search">
                 <img src="./ressources/star.png" class="star mobilestar">
                 <p class="header_elements favorite"><a href="favoris.html">Mes favoris</a></p>
-                <input placeholder="Votre recherche" class="header_elements" />
+                <div class="search_div">
+                    <input placeholder="Votre recherche" class="header_elements" id="search_input"/>
+                    <button class="ok_button" onclick="handleSearchClick()">OK</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -31,10 +34,10 @@
             <h1 class="titre">Mes favoris</h1>
         </section> 
     </main> 
-    <script src="scripts/home.js"></script>            
+    <script src="scripts/favorite.js"></script>            
 </body>
 
-</html>   
+</html>
 
             <!-- <article>
                 <header class="name_and_star">
