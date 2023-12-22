@@ -19,14 +19,18 @@
             <div class="fav_and_search">
                 <img src="./ressources/star.png" class="star mobilestar">
                 <p class="header_elements favorite"><a href="favoris.html">Mes favoris</a></p>
-                <input placeholder="Votre recherche" class="header_elements" />
+                <div class="search_div">
+                    <input placeholder="Votre recherche" class="header_elements" id="search_input"/>
+                    <button class="ok_button" onclick="handleSearchClick()">OK</button>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section class="theme_choices">
             <label for="filter-category">Choississez un théme</label>
-            <select name="filter" id="filter">
+            <select name="filter" id="filter" onchange="handleSelectChange(event)">
+                <option value="">--Faites votre choix--</option>
             </select>
         </section>
 
