@@ -1,6 +1,10 @@
+let museumList = [];
+let eachMuseumThemesTab = [];
+let globalThemesSet = new Set;
+
 async function fetchMuseumList () {
 
-    const response = await fetch("https://data.culturecommunication.gouv.fr/api/explore/v2.1/catalog/datasets/musees-de-france-base-museofile/records?limit=30")
+    const response = await fetch("https://data.culturecommunication.gouv.fr/api/explore/v2.1/catalog/datasets/musees-de-france-base-museofile/records?limit=4")
     const json = await response.json();
     museumList = json.results
     //appel des resultats de l'API
@@ -75,3 +79,9 @@ function handleSearchClick() {
              targetMuseum.innerHTML += infoMuseum;
      } 
  }
+
+ window.addEventListener("load", (event) => {
+    fetchMuseumList();
+    console.log("Ici, load event listener.");
+});
+ const targetMuseum = document.getElementById("targetMuseum");
