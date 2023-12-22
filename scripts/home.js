@@ -44,7 +44,7 @@ async function fetchMuseumList () {
         let infoMuseum = 
         `<article>
                 <header class="name_and_star">
-                <a href="https://kishrrk19.github.io/musee.github.io/details.html"><h2>${name}</h2></a>
+                <a href="details.html"><h2>${name}</h2></a>
                     <img src="./ressources/star.png" class="star"/>
                 </header>
                 <p>${history}</p>
