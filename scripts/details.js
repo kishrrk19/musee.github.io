@@ -58,6 +58,7 @@ function handleSearchClick() {
              targetMuseum.innerHTML += infoMuseum;
      } 
  }
+
 // Nom = targetName
 // Adresse = targetAddress
 // Tel = targetPhone
