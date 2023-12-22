@@ -43,7 +43,7 @@ async function fetchMuseumList () {
         let infoMuseum = 
         `<article>
                 <header class="name_and_star">
-                <h2>${name}</h2>
+                <a href = "details.html"><h2>${name}></h2></a>
                     <img src="./ressources/star.png" class="star" id="star" style="opacity:0.33"/>
                 </header>
                 <p>${history}</p>

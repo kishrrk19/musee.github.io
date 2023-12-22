@@ -27,7 +27,9 @@ async function fetchMuseumList () {
         const name= museum.nomoff;
         const history = museum.hist;
         const city = museum.ville_m;
+        const adress = museum.adrl1_m;
         const visit = museum.url_m;
+        
 
         let infoMuseum = 
         `<article>
@@ -36,7 +38,7 @@ async function fetchMuseumList () {
                     <img src="./ressources/star.png" class="star"/>
                 </header>
                 <p>${history}</p>
-                <p><b>Lieu:</b>${city}</p>
+                <a href ="maps.html"><p><b>Adresse:</b> ${adress} ${city}</p></a>
                 <a href="http://${visit}"><button class="visit"> Nous Visiter</button></a> 
             </article>
             <hr/>`
