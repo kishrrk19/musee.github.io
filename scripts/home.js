@@ -55,7 +55,7 @@ function handleSearchClick() {
     console.log(search_input.value)
     let filteredTab = []
     museumList.map((museum) => {
-        if (museum.nomoff.toLowerCase().includes(search_input.value.toLowerCase())) {
+        if (museum.nom_officiel.toLowerCase().includes(search_input.value.toLowerCase())) {
             filteredTab.push(museum)
         }
     })
